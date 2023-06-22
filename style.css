@@ -26,4 +26,5 @@ p {font-size: 16px;}
 .vidDiv{
   text-align: center;
   object-fit: center;
+  background-color: goldenrod;
 }
