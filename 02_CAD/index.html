@@ -461,7 +461,47 @@
 
   <video src="https://raw.githubusercontent.com/SaiDBod/PHYS-S12-IntroToDigitalFabrication/main/02_CAD/PressFitCircle/IMG-4189.mov" width=500px alt=video!>
   
-  
+  <div class="myDiv">
+    Week 4 Code:<br><br>
+    const int potPin = A0;
+float potreadings;
+const int buttonPin = 2;  
+const int ledPin = 13;
+int buttonState = 0;
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(9600);
+
+
+// initialize the LED pin as an output:
+  pinMode(ledPin, OUTPUT);
+  // initialize the pushbutton pin as an input:
+  pinMode(buttonPin, INPUT);
+
+
+
+
+   // initialize digital pin LED_BUILTIN as an output.
+  pinMode(13, OUTPUT);
+}
+
+
+void loop() {
+  potreadings = analogRead(potPin);
+  float adj_potreadings = potreadings * (5.0 /1023); // remember to put in the decimal with the 5 
+  Serial.println (adj_potreadings);//end of potentiometer and start of LED
+
+
+    digitalWrite(13, HIGH);  // turn the LED on (HIGH is the voltage level)
+  delay(75);                      // wait for a second
+  digitalWrite(13, LOW);   // turn the LED off by making the voltage LOW
+  delay(75);
+
+
+}
+
+  </div>
+
 </div>
 </xmp>
 
