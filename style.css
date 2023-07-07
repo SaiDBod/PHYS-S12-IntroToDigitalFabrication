@@ -33,3 +33,9 @@ p {font-size: 16px;}
   text-align: center;
   object-fit: center;
 }
+.leftmyDiv{
+  border: 5px outset darkslategray;
+  background-color: Sienna;    
+  text-align:left;
+  color:snow;
+}
