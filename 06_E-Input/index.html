@@ -38,14 +38,18 @@
   <img src = "https://raw.githubusercontent.com/SaiDBod/PHYS-S12-IntroToDigitalFabrication/main/06_E-Input/picsw6w7/IMG_4388.jpg" width= 400px alt = 06_EINPUT>
 
   <div class="myDiv">
-    Insert Making the Ultrasonic sensor Documentation
+    For the Ultrasonic Sensor, Both the GND and VCC ports were connected to Ground and 5V pin respectively on the Arduino UNO. The two middle pins of the sensor called "Echo" and "Trig" responsible for the function of the Ultrasonic Sensor.
+
+    <img src="./picsw6w7/IMG-FunctionUltrasonic.png" width=500px><img src ="./picsw6w7/Schema1.png" width = 500px>
+
+    <br> The Trig Sends the Ultrasonic pulse and The Echo receives this pulse after it echoes off an object. So each of these pins must be connected to one of the PWM pins. In this case, they are connected to pins 7 & 8. Afterward, the Sensor must be coded for it to function.
   </div>
-  <img src = "https://raw.githubusercontent.com/SaiDBod/PHYS-S12-IntroToDigitalFabrication/main/05_3DPrinting/w5images_3D/JointCADstep3.png" width= 500px alt = 05_Joint>
-  <img src = "https://raw.githubusercontent.com/SaiDBod/PHYS-S12-IntroToDigitalFabrication/main/05_3DPrinting/w5images_3D/JointCADstep4.png" width= 500px alt = 05_Joint>
+  <img src = "./picsw6w7/Schema2.jpg" height=400px>
+  <img src = "./IMG-UltrasonicGraph.png" height= 300px>
 
 
   <div class="myDiv">
-    Add graphs and schematic of just sensor and LCD
+   The LCD with an I2C can also be added as an output to display values like the distance measured by the Ultrasonic Sensor. Simply connect the respective SDA and SCL pins to the Arduino and the supply Power through VCC → 5V and GND → Ground. <br><br> The Above graph shows the proportional relationship between the Arduino values for distance and the in-real-life value in mm
   </div>
 
  <div><video height="500" controls>
